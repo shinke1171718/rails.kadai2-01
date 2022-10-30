@@ -12,12 +12,12 @@
   <body>
     <header class="header">
       <div class="header-inner">
-        <div class="header-left-nav">
+        <div class="header-left-nav">  #検索エリア
           <a href="/">
             <img alt="サイトのロゴ画像" src="https://presite-potepancamp-rails-02.herokuapp.com/assets/logo.png">
           </a>
           <form action="" accept-charset="UTF-8" method="get" >   # ※※※リンクの指定が未設定※※※
-            <div class="headr-search">
+            <div class="headr-search d-lg-inline-block d-none">
               <input type="text" name="area" id="area" value="" class="form-control" placeholder="エリア">
               <i class="fas fa-map-marker-alt">  # ピンアイコン
                 ::before
@@ -32,9 +32,26 @@
             <input type="submit" name="commit" value="" class="d-none" data-disable-with="">  #d-noneで要素を非表示
           </form>
         </div>
-        <div class="header-right-nav"></div>
+        <div class="header-right-nav">  #ログインエリア
+          <div class="nav-item">
+            <a class="btn btn-primary my-2 mx-3" href="">ログイン</a>   # ※※※リンクの指定が未設定※※※
+            <a class="btn btn-secondary" href="">登録する</a>   # ※※※リンクの指定が未設定※※※
+          </div>
+        </div>
       </div>
     </header>
+    <div class="clearfix">
+      ::after
+    </div>
+    <script>
+      $(function() {
+        $('.nav-trigger').click(function() {
+          $('.header-nav-menu').toggle(1500);
+        })
+      });
+    </script>
+    <div class="notifications">
+    </div>
     <%= yield %>
   </body>
 </html>
