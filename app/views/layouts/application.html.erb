@@ -9,8 +9,32 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-left-nav">
+          <a href="/">
+            <img alt="サイトのロゴ画像" src="https://presite-potepancamp-rails-02.herokuapp.com/assets/logo.png">
+          </a>
+          <form action="" accept-charset="UTF-8" method="get" >   # ※※※リンクの指定が未設定※※※
+            <div class="headr-search">
+              <input type="text" name="area" id="area" value="" class="form-control" placeholder="エリア">
+              <i class="fas fa-map-marker-alt">  # ピンアイコン
+                ::before
+              </i>
+            </div>
+            <div class="headr-search">
+              <input type="text" name="keyword" id="keyword" value="" class="form-control" placeholder="キーワード">
+              <i class="fa-solid fa-magnifying-glass">  # 検索アイコン
+                ::before
+              </i>
+            </div>
+            <input type="submit" name="commit" value="" class="d-none" data-disable-with="">  #d-noneで要素を非表示
+          </form>
+        </div>
+        <div class="header-right-nav"></div>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>
