@@ -1,3 +1,34 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.device_frame {
+  max-width: 600px;
+  text-align: center;
+  padding: 24px;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 4px;
+  // box-shadow: rgb(21 27 38 / 15%) 0px 1px 3px 0px;
+}
+
+.device {
+  padding-top: 36px;
+  font-size: 16px;
+}
+
+.device p {
+  font-size: 16px;
+}
+.mb-4, .my-4 {
+  margin-bottom: 1.5rem!important;
+}
+.mt-4, .my-4 {
+  margin-top: 1.5rem!important;
+}
+
+.device {
+  padding-top: 36px;
+  font-size: 16px;
+}
