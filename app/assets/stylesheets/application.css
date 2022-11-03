@@ -88,6 +88,10 @@ div {
   position: relative;
 }
 
+.d-none{
+  display:none;
+}
+
 @media (min-width: 992px)
 .d-lg-inline-block {
   display: inline-block!important;
@@ -99,6 +103,7 @@ div {
   top: 10px;
   left: 8px;
   font-size: 18px;
+  padding-bottom: 120%;
 }
 
 .fa, .fas {
@@ -125,10 +130,16 @@ i {
 
 .fa-map-marker-alt:before {
   content: "\f3c5";
+  position: fixed;
+  top: 29px;
 }
+
 
 .fa-search:before {
   content: "\f002";
+  position: fixed;
+  top: 29px;
+  left:443px;
 }
 
 .header-right-nav {
@@ -206,9 +217,7 @@ a {
 }
 
 a:-webkit-any-link {
-  color: -webkit-link;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 *, ::after, ::before {
@@ -250,7 +259,11 @@ footer {
 
 .header-left-nav form {
   display: inline-block;
+  position: fixed;
+  top:20px;
+  left:250px;
 }
+
 
 .headr-search {
   display: inline-block;
@@ -274,3 +287,10 @@ button, input, optgroup, select, textarea {
   font-size: inherit;
   line-height: inherit;
 }
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
