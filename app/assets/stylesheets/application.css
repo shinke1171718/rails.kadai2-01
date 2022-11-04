@@ -26,7 +26,14 @@ header {
   display: block;
 }
 
-
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 180px;
+  box-sizing: border-box;
+  color: #333333;
+}
+}
 body {
   background-color: #fff;
   color: #333;
@@ -41,6 +48,17 @@ body {
 
 body {
   margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
 }
 
 :root {
@@ -92,11 +110,6 @@ div {
   display:none;
 }
 
-@media (min-width: 992px)
-.d-lg-inline-block {
-  display: inline-block!important;
-}
-
 
 .header i {
   position: absolute;
@@ -105,6 +118,7 @@ div {
   font-size: 18px;
   padding-bottom: 120%;
 }
+
 
 .fa, .fas {
   font-weight: 900;
@@ -130,16 +144,13 @@ i {
 
 .fa-map-marker-alt:before {
   content: "\f3c5";
-  position: fixed;
-  top: 29px;
 }
 
 
 .fa-search:before {
   content: "\f002";
-  position: fixed;
-  top: 29px;
-  left:443px;
+  position: relative;
+  left: 185px;
 }
 
 .header-right-nav {
@@ -150,6 +161,13 @@ i {
   display: inline-block;
   color: #fff;
   font-size: 14px;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 element.style {
@@ -216,10 +234,6 @@ a {
   border-color: #6c757d;
 }
 
-a:-webkit-any-link {
-  cursor: pointer;
-}
-
 *, ::after, ::before {
   box-sizing: border-box;
 }
@@ -259,9 +273,8 @@ footer {
 
 .header-left-nav form {
   display: inline-block;
-  position: fixed;
-  top:20px;
-  left:250px;
+  position: relative;
+  top:-23px;
 }
 
 
@@ -277,6 +290,11 @@ footer {
   padding-left: 30px;
 }
 
+form {
+  display: block;
+  margin-top: 0em;
+}
+
 button, input {
   overflow: visible;
 }
@@ -288,9 +306,195 @@ button, input, optgroup, select, textarea {
   line-height: inherit;
 }
 
-.btn-primary {
+
+form{
+  height:20px;
+}
+
+.device {
+  padding-top: 36px;
+  font-size: 16px;
+}
+
+.device_inner {
+  width: 360px;
+  margin: 0px auto;
+}
+
+.device p {
+  font-size: 16px;
+}
+.mb-4, .my-4 {
+  margin-bottom: 1.5rem!important;
+}
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+  position: relative;
+  left: 55px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+
+
+.device_frame {
+  max-width: 600px;
+  text-align: center;
+  padding: 24px;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: rgb(21 27 38 / 15%) 0px 1px 3px 0px;
+  height: 600px;
+}
+
+.required-b::before {
+  content: "必須";
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #ff0000a8;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 0 5px;
+  position: relative;
+  left: -210px;
+  top: 30px;
+}
+
+.col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+input[type="password" i] {
+  -webkit-text-security: disc !important;
+  padding: 1px 2px;
+}
+
+input {
+  writing-mode: horizontal-tb !important;
+  font-style: ;
+  font-variant-ligatures: ;
+  font-variant-caps: ;
+  font-variant-numeric: ;
+  font-variant-east-asian: ;
+  font-weight: ;
+  font-stretch: ;
+  font-size: ;
+  font-family: ;
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+  margin: 0em;
+  padding: 1px 2px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}
+
+.mt-4, .my-4 {
+  margin-top: 1.5rem!important;
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.pl-2, .px-2 {
+  padding-left: 0.5rem!important;
+}
+.pr-2, .px-2 {
+  padding-right: 0.5rem!important;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.device {
+  padding-top: 36px;
+  font-size: 16px;
+}
+
+.device a {
+  color: #007bff !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
 }
 
